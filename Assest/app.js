@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     rating.forEach((ratings) => {
         ratings.addEventListener('click', () => {
-            console.log(rating.innerHTML);
+            console.log(ratings.innerHTML);
             rates.innerHTML = ratings.innerHTML;
           
         });

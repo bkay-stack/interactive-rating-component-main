@@ -73,11 +73,15 @@ h2 {
     transition: .4s ease-in-out all;
 }
 
-.inactive {
+/* .inactive:focus {
    background-color: hsl(217, 12%, 63%);
    color: #fff;
-}
+} */
 
+.active:focus {
+    background-color: hsl(216, 12%, 54%);
+    color: #fff;
+}
 
 .submit {
     margin-top: 2rem;
@@ -110,10 +114,11 @@ h2 {
 
 .submit-btn:hover {
     background-color: hsl(0, 0%, 100%);
-    transition: .4s ease-in-out all;
+    transition: .4s;
     transform: scale(.9);
     color: hsl(25, 97%, 53%);
 }
+
 
 .submit-btn a {
     color: #fff;

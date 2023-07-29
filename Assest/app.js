@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = '/Html/index.html';  
     });
 
-    rating.forEach((rating) => {
-        rating.addEventListener('click', () => {
+    rating.forEach((ratings) => {
+        ratings.addEventListener('click', () => {
             console.log(rating.innerHTML);
-            // rates.innerHTML = rating.innerHTML;
+            rates.innerHTML = ratings.innerHTML;
           
         });
     });

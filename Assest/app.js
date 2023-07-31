@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
+
     const submitBtn = document.querySelector('.submit-btn');
-    const rating = document.querySelectorAll('.btns');
-    const rates = document.getElementById('rate');
+    const btnRating = document.querySelectorAll('.btns');
+    const rates = document.querySelector('#rate')
     
 
 
@@ -10,12 +10,17 @@ document.addEventListener('DOMContentLoaded', () => {
         // console.log('clicked')
         window.location.href = '/Html/index.html';  
     });
+      
+    btnRating.forEach((btnRatings) => {
+        btnRatings.addEventListener('click', () => {
+            console.log(btnRatings.innerHTML);
+            rates.innerHTML  = btnRatings.innerHTML;
+        })
+    })
 
-    rating.forEach((ratings) => {
-        ratings.addEventListener('click', () => {
-            console.log(ratings.innerHTML);
-            rates.innerHTML = ratings.innerHTML;
-          
-        });
-    });
-});
+
+
+    console.log(rates)
+
+  
+ 
